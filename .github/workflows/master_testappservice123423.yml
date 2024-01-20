@@ -44,7 +44,7 @@ jobs:
           name: java-app
      
       - name: Rename .War file
-        run: move *.war ROOT.war
+        run: mv *.war ROOT.war
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
